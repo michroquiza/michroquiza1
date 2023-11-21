@@ -1,0 +1,195 @@
+:root {
+    --bluish-gray: #C9CEE0;
+    --black: #141414;
+    --heading-font-size: 2.074rem;
+    --subheading-font-size: 1.2rem;
+    --font-family: 'Sofia Sans', sans-serif;
+    --font-style-regular: 400;
+    --font-style-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bluish-gray);
+    color: var(--black);
+    font-family: var(--font-family);
+    font-style: var(--font-style-regular);
+}
+
+header {
+    padding: 3em 0 3em 0;
+}
+
+main {
+    margin: 0 20px;
+}
+
+@media screen and (min-width:722px) {
+    main {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (min-width:792px) {
+    main {
+        margin: 0 100px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    main {
+        margin: 0 150px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    main {
+        margin: 0 200px;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    main {
+        margin: 0 275px;
+    }
+}
+
+@media (min-width:1701px) and (max-width:1781px) {
+    main {
+        margin: 0 200px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    font-size: var(--heading-font-size);
+    text-align: center;
+    margin-block: 0 -0.45rem;
+    font-style: var(--font-style-bold);
+}
+
+.subheading {
+    font-size: var(--subheading-font-size);
+    text-align: center;
+    letter-spacing: -0.025rem;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icon {
+    height: 1.5rem;
+    margin: 0.85rem 0rem 0 0rem;
+}
+
+.icon-header:hover {
+    transform: scale(1.11);
+
+}
+
+.themetoggle {
+    position: relative;
+    bottom: 3.4rem;
+    background-color: transparent;
+    border: none;
+}
+
+.theme-img {
+    position: fixed;
+    bottom: 3.3rem;
+    left: 2rem;
+}
+
+.project-cards {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1em;
+}
+
+@media screen and (min-width:800px) {
+    .project-cards {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media screen and (min-width:1568px) {
+    .project-cards {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+}
+
+@media screen and (min-width:1748px) {
+    .project-cards {
+        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    }
+}
+
+@media (min-width:1748px) and (max-width:1901px) {
+    .project-cards {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+.project-card {
+    outline: 1.8px solid rgba(161, 161, 161, 0.39);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.project-img {
+    display: block;
+    max-width: 100%;
+}
+
+.project-info {
+    padding: 1rem;
+    background-color: red;
+}
+
+.project-title {
+    font-size: clamp(1rem, 1.55vw, 1.5rem);
+    padding: 1rem 0;
+}
+
+@media (min-width:1172px) and (max-width:1810px) {
+    .project-title {
+        font-size: clamp(1rem, 1.25vw, 1.5rem);
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width:1811px) and (max-width:2000px) {
+    .project-title {
+        font-size: clamp(1rem, 1vw, 1.5rem);
+        padding: 1rem 0;
+    }
+}
+
+.project-link {
+    color: var(--black);
+    margin: 0 0.7rem 0 0.7rem;
+    position: relative;
+}
+
+.project-link:hover {
+    border-bottom: 1.95px solid var(--black);
+    transition: border .35s;
+}
+
+.icon-footer {
+    margin: 4rem 0 3rem 0;
+}
