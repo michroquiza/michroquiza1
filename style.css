@@ -27,10 +27,16 @@ body {
 
 header {
     padding: 3em 0 3em 0;
+    position: relative;
 }
 
 main {
     margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
 }
 
 @media screen and (min-width:722px) {
@@ -72,6 +78,8 @@ main {
 a {
     text-decoration: none;
 }
+
+
 
 .heading {
     font-size: var(--heading-font-size);
@@ -186,8 +194,7 @@ a {
 }
 
 .project-link:hover {
-    border-bottom: 1.95px solid var(--black);
-    transition: border .35s;
+    border-bottom: 1.9px solid var(--black);
 }
 
 .icon-footer {
